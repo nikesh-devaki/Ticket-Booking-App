@@ -1,0 +1,14 @@
+{
+  "database": {
+    "url":     "jdbc:postgresql://localhost:5432/$DB",
+    "user":    "$USER",
+    "password": "$Password",
+    "dbPoolSize": "10"
+  },
+
+  "server": {
+    "port": "9001",
+    "host": "localhost"
+  },
+  "url":"http://localhost:9001"
+}

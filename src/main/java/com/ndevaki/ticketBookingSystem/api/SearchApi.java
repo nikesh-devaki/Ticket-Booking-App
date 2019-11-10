@@ -109,9 +109,9 @@ public class SearchApi {
                 .handler(routingContext -> {
                     logger.info("Getting seats list");
                     int theater_id = Integer.parseInt(routingContext.request().getParam("theater"));
-                    String slot_time = routingContext.request().getParam("slot");
-                    int seatNum = Integer.parseInt(routingContext.request().getParam("seat"));
-                    String showTime = routingContext.request().getParam("time");
+//                    String slot_time = routingContext.request().getParam("slot");
+//                    int seatNum = Integer.parseInt(routingContext.request().getParam("seat"));
+//                    String showTime = routingContext.request().getParam("time");
                     int showId = Integer.parseInt(routingContext.request().getParam("show"));
                     JsonObject reservedList= RedisOperation.getReservedList(theater_id + "_" + showId + "_*");
                     JsonObject theaterSize=new JsonObject().put ("Total Seats",RedisOperation.getValue(theater_id+""));
@@ -125,16 +125,17 @@ public class SearchApi {
                         logger.info(result.getResults().toString());
                         if (result.getNumRows() > 0) {
                             seats.mergeIn(new JsonObject().put("Booked Seats",result.getRows()));
-                            Utils.addCachingHeaders(routingContext.response()).end(new JsonObject()
-                                    .put("status", "success")
-                                    .put("data", seats)
-                                    .encode());
-                        } else {
-                            Utils.addCachingHeaders(routingContext.response()).end(new JsonObject()
-                                    .put("status", "success")
-                                    .put("message", "Request Failed!")
-                                    .encode());
                         }
+                        Utils.addCachingHeaders(routingContext.response()).end(new JsonObject()
+                                .put("status", "success")
+                                .put("data", seats)
+                                .encode());
+//                        else {
+//                            Utils.addCachingHeaders(routingContext.response()).end(new JsonObject()
+//                                    .put("status", "success")
+//                                    .put("message", "Request Failed!")
+//                                    .encode());
+//                        }
                     }, err -> {
                         logger.error("Database problem");
                         logger.error(err.getLocalizedMessage());

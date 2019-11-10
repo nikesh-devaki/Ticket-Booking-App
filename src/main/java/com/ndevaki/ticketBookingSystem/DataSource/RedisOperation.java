@@ -12,7 +12,6 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 import java.util.*;
 
 public class RedisOperation {
-
     public static boolean checkRedisConnection() {
         boolean result = true;
         try (Jedis jedis = JedisFactory.getInstance().getJedisPool().getResource()) {
@@ -64,7 +63,6 @@ public class RedisOperation {
         try (Jedis jedis = JedisFactory.getInstance().getJedisPool().getResource()) {
             result = jedis.sadd(key, values);
         }
-        //return result;
     }
 
     public static String getValue(String key) {
@@ -89,7 +87,6 @@ public class RedisOperation {
 
         try (Jedis jedis = JedisFactory.getInstance().getJedisPool().getResource()) {
             String nextCursor = "0";
-
             do {
                 ScanResult<String> scanResult = jedis.scan(nextCursor, params);
                 List<String> keys = scanResult.getResult();
@@ -109,7 +106,7 @@ public class RedisOperation {
         try (Jedis jedis = JedisFactory.getInstance().getJedisPool().getResource()) {
             Transaction trans=jedis.multi();
             trans.setnx(key,value.toString());
-            trans.expire(key, ApplicationSettings.reserveTime);
+            trans.expire(key, ApplicationSettings.reserveTime*60);
             return (ArrayList<Object>)trans.exec();
         }
     }
@@ -126,16 +123,15 @@ public class RedisOperation {
     public static JsonObject getReservedList(String pattern) {
         JsonArray blockedseats=new JsonArray();
         try (Jedis jedis = JedisFactory.getInstance().getJedisPool().getResource()) {
-            Set<byte[]> redisKeys = jedis.keys("samplekey*".getBytes());
-            List<String> keysList = new ArrayList<>();
+            Set<byte[]> redisKeys = jedis.keys(pattern.getBytes());
             Iterator<byte[]> it = redisKeys.iterator();
             while (it.hasNext()) {
                 byte[] data = (byte[]) it.next();
-                blockedseats.add(new String(data, 0, data.length)
-                                        .split("_")[2]);
+                blockedseats.add(Integer.parseInt(new String(data, 0, data.length)
+                                        .split("_")[2]));
             }
         }
-        JsonObject reservedSeats=new JsonObject().put("ReservedSeats",blockedseats);
+        JsonObject reservedSeats=new JsonObject().put("Reserved Seats",blockedseats);
         return reservedSeats;
     }
 }

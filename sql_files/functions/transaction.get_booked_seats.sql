@@ -15,7 +15,7 @@ DECLARE
 BEGIN
 
  RETURN QUERY
-	select seatNum from tranasction.booking where satus='Booked' and theater_id=t_id and showId=s_id;
+	select seat_Num from transaction.booking where status='BOOKED' and theater_id=t_id and show_Id=s_id;
 END;
 
 $$;

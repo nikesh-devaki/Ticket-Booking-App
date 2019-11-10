@@ -1,23 +1,15 @@
-drop function IF EXISTS transaction.book_ticket(long,integer,varchar,integer,timestamp,integer);
+drop function IF EXISTS transaction.book_ticket(bigint,integer,integer,integer);
 
-create function transaction.book_ticket(mob_num long,t_id integer,slot_time varchar,
-                                         s_num integer,s_time timestamp,sh_id integer) returns TABLE(id integer,status vachar)
+create function transaction.book_ticket(mob_num bigint,t_id integer,s_num integer,sh_id integer) returns TABLE(txn_id integer,confirmation varchar)
     language plpgsql
 as
 $$
-    -- exception management variables
-DECLARE
-    exception_error_code  text;
-    exception_message     text;
-    exception_detail      text;
-    exception_hint        text;
-    exception_context     text;
 
 BEGIN
 
  RETURN QUERY
-	insert into transaction.booking ( theater_id,show_id,mobilenum,status,seat_num,slot_time) values
-	                               (t_id,sh_id,mob_num,"BOOKED",s_num,s_time) RETURNING id,status;
+	insert into transaction.booking ( theater_id,show_id,mobilenum,status,seat_num) values
+	                               (t_id,sh_id,mob_num,'BOOKED',s_num) RETURNING id as txn_id,status as confirmation;
 END;
 
 $$;

@@ -1,0 +1,40 @@
+<configuration debug="true">
+    <property name="LOG_DIR" value="./logs" />
+
+    <appender name="FILE-AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--<file>${LOG_DIR}/logFile.log</file>-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${LOG_DIR}/ticket-booking-api-%d{yyyy-ww}.log</fileNamePattern>
+
+            <!-- keep 180 days' worth of history capped at 1GB total size -->
+            <maxHistory>180</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+
+        <encoder>
+            <pattern>%-30(%d{dd HH:mm:ss} [%thread]) %-5level %logger{36} - %msg%n%ex{2}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%-30(%d{dd HH:mm:ss} [%thread]) %-5level %logger{35} - %msg%n%ex{2}</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.ndevaki.ticketBookingSystem" level="ALL" additivity="false">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE-AUDIT" />
+    </logger>
+
+    <!-- By default, the level of the root level is set to DEBUG -->
+    <root level="ERROR">
+        <appender-ref ref="FILE-AUDIT" />
+    </root>
+</configuration>

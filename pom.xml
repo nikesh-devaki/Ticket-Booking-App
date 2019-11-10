@@ -71,7 +71,7 @@
                             <mainClass>io.vertx.core.Launcher</mainClass>
                             <arguments>
                                 <argument>run</argument>
-                                <argument>com.tagbox.corning.MainVerticle</argument>
+                                <argument>com.ndevaki.ticketBookingSystem.MainVerticle</argument>
                             </arguments>
                         </configuration>
                     </execution>

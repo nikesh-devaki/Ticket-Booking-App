@@ -1,6 +1,7 @@
 package com.ndevaki.ticketBookingSystem;
 
 import com.ndevaki.ticketBookingSystem.DataSource.DatabaseHandler;
+import com.ndevaki.ticketBookingSystem.api.BookingApi;
 import com.ndevaki.ticketBookingSystem.api.SearchApi;
 import com.ndevaki.ticketBookingSystem.utils.ApplicationSettings;
 import io.vertx.core.http.HttpMethod;
@@ -54,6 +55,7 @@ public class MainVerticle extends AbstractVerticle {
 
         // Api initialization
         SearchApi authApi = new SearchApi(db, "/api/v1/", router);
+        BookingApi bookingApi=new BookingApi(db,"/api/v1/",router);
         router.route("/*").handler(rc -> {
             logger.info("For refresh handling");
             logger.info(rc.request().path());

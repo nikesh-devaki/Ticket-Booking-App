@@ -1,0 +1,214 @@
+10 09:33:33 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 09:33:33 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 09:33:33 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 09:33:33 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 09:33:37 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 09:33:45 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:34:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 09:34:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 09:34:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 09:34:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 09:34:41 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 09:34:51 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:34:53 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 09:34:53 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - ERROR: function transaction.get_booked_seats(integer, integer) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 15
+10 09:35:29 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:35:30 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 09:35:30 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - ERROR: relation "tranasction.booking" does not exist
+  Where: PL/pgSQL function transaction.get_booked_seats(integer,integer) line 12 at RETURN QUERY
+10 09:36:05 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:36:05 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 09:36:05 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - ERROR: column "satus" does not exist
+  Hint: Perhaps you meant to reference the column "booking.status".
+  Where: PL/pgSQL function transaction.get_booked_seats(integer,integer) line 12 at RETURN QUERY
+10 09:36:31 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:36:31 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 09:36:31 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - ERROR: column "showid" does not exist
+  Hint: Perhaps you meant to reference the column "booking.show_id".
+  Where: PL/pgSQL function transaction.get_booked_seats(integer,integer) line 12 at RETURN QUERY
+10 09:37:17 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:37:17 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - []
+10 09:37:47 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:37:47 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - []
+10 09:39:27 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 09:39:27 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 09:39:27 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 09:39:27 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 09:39:30 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 09:40:24 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 09:40:24 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - []
+10 10:03:45 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 10:03:45 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[null]]
+10 10:05:10 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 10:05:10 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 10:52:38 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 10:52:40 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 10:53:32 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 10:53:32 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 11:15:38 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:15:38 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:15:38 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:15:38 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:15:45 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:15:53 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:15:54 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 1_1_1
+10 11:16:04 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 11:16:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:16:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:16:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:16:40 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:16:42 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:16:49 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:16:50 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 1
+10 11:16:52 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 11:17:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:17:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:17:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:17:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:17:48 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:17:54 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:17:55 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 1
+10 11:17:56 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - ["1"]
+10 11:17:56 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - {"Reserved Seats":["1"]}
+10 11:17:57 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 11:19:07 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:19:07 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:19:07 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:19:07 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:19:09 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:19:14 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:19:15 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 1
+10 11:19:17 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - [1]
+10 11:19:17 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - {"Reserved Seats":[1]}
+10 11:19:18 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 11:19:57 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:19:57 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 2
+10 11:19:57 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 1
+10 11:19:57 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - [2,1]
+10 11:19:57 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - {"Reserved Seats":[2,1]}
+10 11:19:57 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12]]
+10 11:20:30 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:20:30 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 2
+10 11:20:30 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - 1
+10 11:20:30 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - [2,1]
+10 11:20:30 [vert.x-eventloop-thread-0] INFO  c.n.t.DataSource.RedisOperation - {"Reserved Seats":[2,1]}
+10 11:20:30 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12], [13]]
+10 11:31:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:31:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:31:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:31:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:31:49 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:32:56 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - For refresh handling
+10 11:32:56 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - /api/v1/seats
+10 11:32:56 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - send resource not found
+10 11:33:11 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - For refresh handling
+10 11:33:11 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - /api/v1/reserves
+10 11:33:11 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - send resource not found
+10 11:38:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:38:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:38:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:38:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:38:07 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:38:13 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - For refresh handling
+10 11:38:13 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - /api/v1/reserves
+10 11:38:13 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - send resource not found
+10 11:39:20 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:39:20 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:39:20 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:39:20 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:39:23 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:39:36 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - For refresh handling
+10 11:39:36 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - /api/v1/reserve
+10 11:39:36 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - send resource not found
+10 11:40:42 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - For refresh handling
+10 11:40:42 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - /api/v1/reserve
+10 11:41:27 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - send resource not found
+10 11:41:44 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:41:44 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:41:44 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:41:44 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:41:46 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:41:52 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:42:08 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:42:22 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Getting seats list
+10 11:42:31 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[12], [13]]
+10 11:44:06 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:44:39 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:44:39 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:44:39 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:44:39 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:44:42 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:44:47 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:45:32 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Vertx Verticle Stopping...
+10 11:46:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:46:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:46:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:46:02 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:46:04 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:46:15 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:46:34 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:46:34 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:46:34 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:46:34 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:46:36 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:46:42 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:47:01 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Vertx Verticle Stopping...
+10 11:47:55 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:47:55 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:47:55 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:47:55 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:47:57 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:49:35 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:49:41 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Seat:3 in theater:1 reserved for user:2134 sucesfully
+10 11:50:32 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:50:36 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Seat:3 in theater:1 reserved for user:2134 sucesfully
+10 11:50:50 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Vertx Verticle Stopping...
+10 11:51:31 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:51:31 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:51:31 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:51:31 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:51:36 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:51:45 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 11:51:48 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Seat:3 in theater:1 reserved for user:2134 sucesfully
+10 11:55:00 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Vertx Verticle Stopping...
+10 11:55:16 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 11:55:16 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 11:55:16 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 11:55:16 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 11:55:18 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 11:55:26 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - For refresh handling
+10 11:55:26 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - /api/v1/bookseat
+10 11:55:26 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - send resource not found
+10 11:57:28 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Booking Ticket
+10 11:57:33 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 11:57:33 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - No value specified for parameter 5.
+10 12:01:03 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Vertx Verticle Stopping...
+10 12:01:22 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 12:01:22 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 12:01:22 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 12:01:22 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 12:01:23 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 12:01:32 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Booking Ticket
+10 12:01:34 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 12:01:34 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - The column index is out of range: 4, number of columns: 3.
+10 12:02:01 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - TimeZone: Greenwich Mean Time
+10 12:02:01 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Reading DB Config File
+10 12:02:01 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Success: Reading DB Config File
+10 12:02:01 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - Config Read Successful
+10 12:02:04 [vert.x-eventloop-thread-0] INFO  c.n.ticketBookingSystem.MainVerticle - server is running...9001
+10 12:02:13 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Booking Ticket
+10 12:02:42 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Reserving Ticket
+10 12:02:42 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Seat:3 in theater:1 reserved for user:2134 sucesfully
+10 12:02:48 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Booking Ticket
+10 12:02:50 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 12:02:50 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - ERROR: column "BOOKED" does not exist
+  Where: PL/pgSQL function transaction.book_ticket(bigint,integer,integer,integer) line 5 at RETURN QUERY
+10 12:04:08 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Booking Ticket
+10 12:04:08 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - Database problem
+10 12:04:08 [vert.x-eventloop-thread-0] ERROR c.n.t.api.SearchApi - ERROR: column reference "id" is ambiguous
+  Detail: It could refer to either a PL/pgSQL variable or a table column.
+  Where: PL/pgSQL function transaction.book_ticket(bigint,integer,integer,integer) line 5 at RETURN QUERY
+10 12:05:35 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - Booking Ticket
+10 12:05:36 [vert.x-eventloop-thread-0] INFO  c.n.t.api.SearchApi - [[3,"BOOKED"]]
